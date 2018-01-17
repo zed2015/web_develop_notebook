@@ -30,12 +30,29 @@ C-b d 退出tumx，并保存当前会话，这时，tmux仍在后台运行，可
 # 会话命令
 C-x s 以菜单的方式查看并选择会话
 C-x :new-session 新建一个会话
+tmux new-session -s'my rails project'
+
+tmux rename-session -t 1 "my session
 C-x d 退出并保存会话
 终端运行 tmux attach 返回会话
 
  ######################
  ##  vim快捷键       ##
  ###################### 
+
+
+#窗口大小调整
+纵向调整
+:ctrl+w + 纵向扩大（行数增加）
+:ctrl+w - 纵向缩小 （行数减少）
+:res(ize) num  例如：:res 5，显示行数调整为5行
+:res(ize)+num 把当前窗口高度增加num行
+:res(ize)-num 把当前窗口高度减少num行
+横向调整
+:vertical res(ize) num 指定当前窗口为num列
+:vertical res(ize)+num 把当前窗口增加num列
+:vertical res(ize)-num 把当前窗口减少num列
+
 # 与系统粘版的集成
 +y +p
 
