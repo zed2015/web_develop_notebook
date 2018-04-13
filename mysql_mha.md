@@ -200,7 +200,7 @@ mysql> flush privileges
 ## 问题
 > 1. 期间遇到权限问题， 请通过 `usermod -a -G [group] username`, `chown`, `chomod` 更改权限，建立文件夹 
 
-> 2. Slave failed to initialize relay log info structure from the repository ,解决方案 set slave all
+> 2. Slave failed to initialize relay log info structure from the repository ,解决方案 stop salve; reset slave all; reset master;
 
 > 3. 5.22 版本的perl 会遇到 redundant argument  in sprintf 错误，解决方案 按照github上的[修复](https://github.com/yoshinorim/mha4mysql-node/pull/23/files?diff=split)更改两处代码既可以, 需要用到root权限
 
