@@ -34,12 +34,58 @@ if __name__ == '__main__':
 - self.run()
     - self.start()
       > 做一些准备工作
+
+        - self.LISTENERS = [] = sock.create_socket(self.cfg,self.log, self.fds)
+          > 创建套接字
+
+            - self.sockets = socket.formfd()
     - self.manage_worker()
       > 管理进程
-        - self.spawn_workers() # 扩展进程数
+
+        - self.spawn_workers()
+        - self.spawn_worker() # 扩展进程数
             - self.worker_class() >> self.cfg.worker_class
             - gunicorn.workers.gthread.ThreadWorker
+        - worker.init_process()  # 子进程worker 初始化 
 
-    
+            - self.poller = selectors.DefaultSelector()
+            - self.init_signals()
+            - self.load_wsgi() >> self.wsgi = self.app.wsgi() = flask_app
+            -self.run()  # while loop, 真正的进程死循环接受套接字链接
+    - while True:
+      > 死循环来根据子进程状态进行kill，spawn进程，保证进程数量o
+
+        - self.murder_workers()
+        - self.spawn_workers()
+
+
+- worker.run()
+  > 子进程跑起来了
+
+    - self.poller = gunicorn.selectors.epool()
+    - while True:
+        - self.pooler.register(sock, event, callback=self.accept)
+        - self.poller.poll() >> self.callback()
+        - self.accept(server_name, listener)
+            ```python 
+            sock, client = listener.accept()
+            # initialize the connection object
+            conn = TConn(self.cfg, sock, client, server) # 参数容器
+            self.nr_conns += 1
+            # enqueue the job
+            self.enqueue_req(conn)
+            ```
+            ```python
+            def enqueue_req(self, conn):
+                conn.init()
+                # submit the connection to a worker
+                fs = self.tpool.submit(self.handle, conn) # 将任务丢进线程池中
+                self._wrap_future(fs, conn) # 将fs 任务进行包装，添加回掉函数
+            ```
+            - self.handle()
+            - self.handle_request()
+            - self.wsgi()
+            - self.finish_request()
+            
 
 
