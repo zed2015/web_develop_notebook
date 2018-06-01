@@ -4,6 +4,11 @@
 # 导出数据
 > mysqldump -uroot -p > xxx.sql
 
+# 导入数据
+> mysql -h localhost -uroot -p database_name < data.sql
+
+> pg_dump -h localhost -U postgres -d vps_news > vps_news.sql
+
 # 忘记root密码解决方法
 > 1. 进入配置文件加入 `skip-grant-tables`
 > 2. 重启msyql, `sudo service mysql restart`
