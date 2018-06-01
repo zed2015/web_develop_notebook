@@ -8,3 +8,9 @@ git commit -m "删除版本库的东西"
 ### 展示log
 `git log --graph --pretty=oneline --abbrev-commit`
 
+### 删除远程分支
+`git push origin --delete branchname`
+
+### 删除本地分支
+`git branch -d branchname`
+
