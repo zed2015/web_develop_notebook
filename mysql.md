@@ -15,6 +15,13 @@
 > 3. 进入mysql,修改密码 `update mysql.user set authentication_string=password('123456') where user=root and host='localhost'`
 > 4. 重启msyql ,用新密码进入即可
 
+# 修改表的外键约束
+
+- 删除约束
+`alter table table_name drop foreign key constraint_name`
+- 添加约束
+alter table table_name add constraint constraint_name foregin key (`user_id`) references `other_table` (`id`);
+
 
 
 

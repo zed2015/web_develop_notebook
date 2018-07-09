@@ -14,3 +14,10 @@ git commit -m "删除版本库的东西"
 ### 删除本地分支
 `git branch -d branchname`
 
+### 拉取远程分支
+`git fetch origin 远程分支名x:本地分支名x`
+`git checkout -b 本地分支名x origin/远程分支名x`
+
+
+## 换源
+get remote set-url source
