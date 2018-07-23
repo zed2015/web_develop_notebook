@@ -19,7 +19,11 @@ groupmod -g gid groupname
     - `ssh-add ~/.ssh/id_rsa_spec`
     - `ssh-add -l[-L]`
 
+## 批量命名
+`rename -s/htm/html/ ./*`
 
 
-
+## linux 启动顺序
+1. /etc/rc.local
+> 很多环境变量可能没有设置，因此需要用绝对路径
 

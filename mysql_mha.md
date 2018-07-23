@@ -19,9 +19,9 @@
 
 ## master 上配置
 ###  先在 master 数据库设置虚拟ip
-
+> 有一个深渊巨坑， 一定要带上掩码，否则会出现问题路由转发问题， 导致nginx通信失败
 ``` bash
-sudo ifconfig eth0:1 10.0.14.30
+sudo ifconfig eth0:1 10.0.14.30/24
 ```
 
 ### 在 master 上创建"dbuser"用户 和 "website"数据库
