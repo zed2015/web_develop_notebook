@@ -27,3 +27,7 @@ groupmod -g gid groupname
 1. /etc/rc.local
 > 很多环境变量可能没有设置，因此需要用绝对路径
 
+## 如何查看ubuntu的详细版本
+- `sudo lsb_release -a `
+- `cat /etc/issue`
+
