@@ -60,8 +60,11 @@ C-x d 退出并保存会话
 复制多行
 :9, 15 copy 16
 
+vim打开gb2312文件
+:edit ++enc=gb18030
 
-/#以下命令将文中所有的字符串idiots替换成managers：
+
+#以下命令将文中所有的字符串idiots替换成managers：
 
 :1,$s/idiots/manages/g
 

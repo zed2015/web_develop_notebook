@@ -31,6 +31,14 @@ sudo make install
 sudo ln -s /usr/loca/lib/python3.6/bin/python3.6 /usr/bin/python3.6
 ```
 
+## python 排坑指南
+### 函数参数传递
+- 当传递一个可变对象时， 如果在函数内部对这个对象更新，全局都更新了
+> 曾经传递给一个字典对象给函数，然后函数内部用update给字典更新来创建一条记录， unittest时，就发现测试一直失败。最后发现这个坑
+
+### 如果将带有中文的list， dict 变成可以联合logger打印出来
+- json.dump(['张池'], ensure_ascii=False)
+
 
 
 

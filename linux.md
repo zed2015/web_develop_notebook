@@ -31,3 +31,24 @@ groupmod -g gid groupname
 - `sudo lsb_release -a `
 - `cat /etc/issue`
 
+## tree 命令生成文本文件结构
+
+- `tree -I '*pyc|ansible' -U -L 2 -v --dirsfirst  -n -o workdir_L2.txt`
+
+## wc ls作何统计文件个数
+
+- `ls -lR | grep "^-" |wc -l`
+> -R 循环递归
+- `ls -lR | grep "^d" |wc -l`
+- `ls -l | grep "^d" |wc -l`
+- `ls -l | grep "^d" |wc -l`
+
+## zip 压缩命令
+zip -r dest.zip dest/
+
+## sudo 命令会忽视environment
+- sudo -E
+- https://stackoverflow.com/questions/8633461/how-to-keep-environment-variables-when-using-sudo
+
+## rsync
+ - `rsync -avt dest_dir user@ip:/dir/`

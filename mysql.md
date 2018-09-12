@@ -23,5 +23,26 @@
 alter table table_name add constraint constraint_name foregin key (`user_id`) references `other_table` (`id`);
 
 
+## 查询
+### datetime字段查询
+- mysql 中 datetime 字段可以使用like查询
+- django中的datetime查询不支持like
+- django中支持startswith 查询 
+
+
+## mysql drop truncate 很慢的解决办法
+- 重新启动mysql服务
+- 方法2
+    - `rename table table_name to t1`
+    - `create table table_name like t1`
+    - `drop table t1`
+
+- 方法3
+    - `SELECT TABLE_NAME,TABLE_ROWS,DATA_LENGTH FROM TABLES WHERE TABLE_SCHEMA='mydatabase' AND TABLE_NAME='mytable'`
+    - `show processlist;`
+    - `kill id`
+
+
+
 
 

@@ -13,3 +13,42 @@ location /  通用匹配，任何未匹配到其它location的请求都会匹配
 ## nginx 设置代理转发的特定头部
 proxy_set_header X-Real-IP $remote_ip
 
+## try_file rewrite的理解
+- try_file $uri $uri/ @rewrites
+> 尝试读取文件或文件夹， 如果找不到那么会跳到rewiretes的location
+- rewrites re replace [lask, break]
+> 将正则匹配的替换为replace的东西，后面是flag标记， 
+- rewrite_log on;
+> 当报错时，可以开启日志功能
+- rewrite 会优先 location进行匹配
+
+## 访问一个网站时，浏览器会主动访问$host/favicon.ico
+> 导致nginx 访问日志出现404
+```
+location = /favicon.ico {
+  log_not_found off;
+  access_log off;
+}
+
+```
+## error_page指定的解释
+> 当发生作物的时候能够显示一个预定义的uri
+- `error_page 502 503  /50x.html`
+> 相当如产生了一个内部internal redirect
+- `error_page 403 http://example.com/forbiddent.hmtl`
+> 默认返回302重定向
+- `error_page 502 503 =200  /50x.html`
+> 可以指定返回的转该码
+- `error_page`不会gizp
+
+
+## internal 指定
+- contenxt is location
+- requests redirected by the “X-Accel-Redirect” response header field from an upstream server
+- requests changed by the rewrite directive.
+- requests redirected by the error_page, index, random_index, and try_files directives
+
+
+
+
+
