@@ -18,6 +18,15 @@ git commit -m "删除版本库的东西"
 `git fetch origin 远程分支名x:本地分支名x`
 `git checkout -b 本地分支名x origin/远程分支名x`
 
+### 暂存
+`git stash`
+`git stash list`
+`git stash apply stash@{0}`
+
+### 跟踪
+`git branch --set-upstream branch-name origin/branch-name`
+`git checkout -b branch-name origin/branch-name`
+
 
 ## 换源
 get remote set-url source
