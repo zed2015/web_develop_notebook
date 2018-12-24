@@ -45,11 +45,26 @@ groupmod -g gid groupname
 - `ls -l | grep "^d" |wc -l`
 
 ## zip 压缩命令
-zip -r dest.zip dest/
+zip -r dest.zip dest/ -x dest/.git/\*
 
 ## sudo 命令会忽视environment
 - sudo -E
 - https://stackoverflow.com/questions/8633461/how-to-keep-environment-variables-when-using-sudo
 
+## sudo no password
+>https://askubuntu.com/questions/192050/how-to-run-sudo-command-with-no-password
+
 ## rsync
  - `rsync -avt dest_dir user@ip:/dir/`
+
+## cut 命令
+> https://www.geeksforgeeks.org/cut-command-linux-examples/
+- `cut -d: -f1 filename |sort
+
+## ubuntu不能支持中文
+- sudo locale-gen zh_CN.UTF-8
+- sudo update-locale LANG=zh_CN.UTF-8
+- sudo vim /etc/default/locale 
+    - LC_ALL="zh_CN.UTF-8"
+    - LANGUAGE="zh_CN.zh"
+
