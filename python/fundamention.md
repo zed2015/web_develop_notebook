@@ -40,5 +40,10 @@ sudo ln -s /usr/loca/lib/python3.6/bin/python3.6 /usr/bin/python3.6
 - json.dump(['张池'], ensure_ascii=False)
 
 
+### python & python3 __str__, __unicode__
+- python3 only __str__ use;
+- python2 str() will use __str__, unicode() use __unicode__
+
+
 
 

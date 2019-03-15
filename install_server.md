@@ -8,6 +8,8 @@ sudo apt install redis-server
 sudo apt update
 sudo apt install nginx
 ```
+### install kafka
+> `https://hevodata.com/blog/how-to-install-kafka-on-ubuntu/`
 
 ### ubuntu 安装 python 虚拟环境包管理工具
 ```bash

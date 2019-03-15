@@ -67,4 +67,17 @@ zip -r dest.zip dest/ -x dest/.git/\*
 - sudo vim /etc/default/locale 
     - LC_ALL="zh_CN.UTF-8"
     - LANGUAGE="zh_CN.zh"
+- locale charmap
+
+## grep -
+- `grep '\-\-\-' your_file`
+
+### 用户相关操作
+> https://www.jianshu.com/p/f468e02f38a0
+
+### 查看代码行数
+- `find . -name '*.php' | xargs wc -l`
+
+### 动态连接库管理ldconfig
+> `https://blog.csdn.net/u011636567/article/details/77162217`
 

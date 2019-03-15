@@ -2,6 +2,27 @@
 
 ## 分布式数据
 
+## MYISAM 表级锁
+- table read lock
+    - select 前给涉及的表加读锁
+    - 其它线程不能写
+- table write lock
+    - update delete insert 前会加写锁
+    - 其它线程不能读取
+- 查看锁的状态 `show status like 'table%';`
+    - Table\_locks\_immediate：产生表级锁定的次数；
+    - Table\_locks\_waited：出现表级锁定争用而发生等待的次数；
+## innodb 行级别锁
+> https://www.cnblogs.com/sessionbest/articles/8689071.html
+- 对于更新操作会自动加上排他锁
+- select lock in share mode, 其它事务不能更新
+- select for update 排他锁, 其它的事务不能读取
+- 注意:
+    - 在不通过索引条件查询的时候，InnoDB确实使用的是表锁，而不是行锁。
+    - 由于MySQL的行锁是针对索引加的锁，不是针对记录加的锁，所以虽然是访问不同行的记录，但是如果是使用相同的索引键，是会出现锁冲突的。
+    - 当表有多个索引的时候，不同的事务可以使用不同的索引锁定不同的行，另外，不论是使用主键索引、唯一索引或普通索引，InnoDB都会使用行锁来对数据加锁。
+    - 即便在条件中使用了索引字段，但是否使用索引来检索数据是由MySQL通过判断不同执行计划的代价来决定的，如果MySQL认为全表扫描效率更高，比如对一些很小的表，它就不会使用索引，这种情况下InnoDB将使用表锁，而不是行锁。因此，在分析锁冲突时，别忘了检查SQL的执行计划，以确认是否真正使用了索引。
+
 ### 事务
 
 - 读已提交

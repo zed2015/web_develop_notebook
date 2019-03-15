@@ -29,4 +29,19 @@ git commit -m "删除版本库的东西"
 
 
 ## 换源
-get remote set-url source
+get remote set-url origin source 
+
+
+## 打包暂存区
+- stashName=`git stash create`;
+- git archive <options> $stashName
+
+
+## git flow
+> http://www.ruanyifeng.com/blog/2015/12/git-workflow.html
+> http://www.open-open.com/lib/view/open1451353135339.html
+
+## git rebase
+git rebase --onto commit \[remote,commit, begin\] \[commit, end]
+
+## git cherry-pick commit 
