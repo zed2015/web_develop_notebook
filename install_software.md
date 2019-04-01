@@ -30,3 +30,5 @@ $ sudo update-alternatives --install /usr/bin/java java ${JAVA_HOME%*/}/bin/java
 $ sudo update-alternatives --install /usr/bin/javac javac ${JAVA_HOME%*/}/bin/javac 20000
 update-alternatives --config java
 ```
+### install opencv java in mac
+> `https://opencv-java-tutorials.readthedocs.io/en/latest/01-installing-opencv-for-java.html`
