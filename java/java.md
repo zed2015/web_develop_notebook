@@ -24,3 +24,6 @@
 
 ### kafaka
 > `https://blog.csdn.net/xianzhen376/article/details/51167742`
+
+### json convert
+> `https://zhuanlan.zhihu.com/p/39870112`
