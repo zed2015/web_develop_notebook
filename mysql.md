@@ -87,6 +87,12 @@ alter table table_name add constraint constraint_name foregin key (`user_id`) re
 ### query optimize
 - 当查询的结果数据占总数据的0.3以上时，会放弃索引而全表扫描
 
+### datetime add sub
+- `UPDATE comment c set c.time = DATE_ADD(c.time, INTERVAL 7 DAY) ;`
+
+### mysql 5.7.25 time zone为system_time_zone时是cst引发jdbc误解为-5,导致时间差13个小时
+> `vim my.conf; default_time_zone = '+08:00'`
+
 
 
 

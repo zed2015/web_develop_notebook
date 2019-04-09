@@ -32,3 +32,23 @@ update-alternatives --config java
 ```
 ### install opencv java in mac
 > `https://opencv-java-tutorials.readthedocs.io/en/latest/01-installing-opencv-for-java.html`
+### cuda9.2 的安装
+- cuda9.2 依赖 nvidia driver 396 以上
+    - 卸载低版本的nvidia驱动
+    > `sudo apt-get purge nvidia*`
+    - 换源
+    > `sudo add-apt-repository ppa:graphics-drivers, sudo apt-get update`
+    - 查找显卡驱动最新版本
+    > `sudo apt-cache search nvidia`
+    - apt 安装
+    > `sudo apt-get install nvidia-396 nvidia-settings nvidia-prime`
+    - 重启电脑,一定要做
+    - 验证是否安装成功
+    > `lsmod | grep nvidia 有输出`， `lsmod | grep nouveau` 无输出
+    - 停止自动更新
+    > `sudo apt-mark hold nvidia-396`
+
+- 安装 cuda9.2
+    - 从官网下载 `cuda_9.2.148_396.37_linux.run`
+    - 安装 `sudo sh cuda_9.2.148_396.37_linux.run`
+    - 交互界面，有一项是否安装驱动，选择否
