@@ -27,3 +27,7 @@
 
 ### json convert
 > `https://zhuanlan.zhihu.com/p/39870112`
+
+
+### spring mvc servlet
+> `https://stackify.com/spring-mvc/`
