@@ -24,6 +24,8 @@ alter table table_name add constraint constraint_name foregin key (`user_id`) re
 
 
 ## 查询
+### 查询insert返回的id
+> SELECT LAST_INSERT_ID();
 ### datetime字段查询
 - mysql 中 datetime 字段可以使用like查询
 - django中的datetime查询不支持like
@@ -91,7 +93,7 @@ alter table table_name add constraint constraint_name foregin key (`user_id`) re
 - `UPDATE comment c set c.time = DATE_ADD(c.time, INTERVAL 7 DAY) ;`
 
 ### mysql 5.7.25 time zone为system_time_zone时是cst引发jdbc误解为-5,导致时间差13个小时
-> `vim my.conf; default_time_zone = '+08:00'`
+> `vim my.conf; default-ime-zone = '+08:00'`
 
 
 

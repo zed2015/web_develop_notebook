@@ -27,12 +27,37 @@
 #### jackson
 > `https://www.baeldung.com/jackson-serialize-enums`
 
-### kafaka
+#### kafaka
 > `https://blog.csdn.net/xianzhen376/article/details/51167742`
 
-### json convert
+#### json convert
 > `https://zhuanlan.zhihu.com/p/39870112`
 
 
 ### spring mvc servlet
 > `https://stackify.com/spring-mvc/`
+=======
+#### java logger
+> `https://www.jianshu.com/p/1ded57f6c4e3`
+
+#### spEL springboot 中配置文件的表达式
+> `https://segmentfault.com/a/1190000012645312`
+
+#### bind request to object
+> `http://dolszewski.com/spring/how-to-bind-requestparam-to-object/`
+#### enum 类型转换
+> `https://github.com/test-project-demos/spring-boot-get-post-enum-param`
+
+#### mybatis enum typehandler
+> `https://segmentfault.com/a/1190000010755321`
+
+
+#### spring security in unittest
+> `https://stackoverflow.com/questions/45230620/spring-boot-test-does-not-respect-web-security-configuration`
+
+#### 文件上传
+> `https://spring.io/guides/gs/uploading-files/`
+
+#### 自定义validate
+> `https://blog.csdn.net/u011781521/article/details/79670203`
+
