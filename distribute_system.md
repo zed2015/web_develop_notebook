@@ -7,5 +7,6 @@
 - kafka consumer支持分组、负载均衡
 
 ### zooKeeper
+> `https://mymonkey110.gitbooks.io/zookeeper-distributed-process-coordination/content/zookeeper%E6%9E%B6%E6%9E%84.html`
 - 
 
