@@ -18,6 +18,16 @@
 
 
 ### spring
+#### start thread backgroud 
+> `https://stackoverflow.com/questions/37390718/start-thread-at-springboot-application`
+> `https://www.jianshu.com/p/de7b0e124248`
+
+#### DisposableBean, InitializingBean
+> `https://www.jianshu.com/p/c2e33c451ee0`
+
+#### @PostConstruct, 
+> `https://blog.csdn.net/wo541075754/article/details/52174900`
+
 #### annotation
 > `https://blog.csdn.net/huyangyamin/article/details/52487233`
 #### boot
@@ -29,6 +39,8 @@
 
 #### kafaka
 > `https://blog.csdn.net/xianzhen376/article/details/51167742`
+#### spring kafka
+> `https://segmentfault.com/a/1190000015316875`
 
 #### json convert
 > `https://zhuanlan.zhihu.com/p/39870112`

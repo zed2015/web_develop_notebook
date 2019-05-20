@@ -81,3 +81,9 @@ zip -r dest.zip dest/ -x dest/.git/\*
 ### 动态连接库管理ldconfig
 > `https://blog.csdn.net/u011636567/article/details/77162217`
 
+### 查看nds
+- cat /etc/resolv.conf
+- nmcli dev show |grep DNS
+
+### 虚拟网络
+> `https://www.ibm.com/developerworks/cn/linux/1310_xiawc_networkdevice/`

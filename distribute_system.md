@@ -8,5 +8,6 @@
 
 ### zooKeeper
 > `https://mymonkey110.gitbooks.io/zookeeper-distributed-process-coordination/content/zookeeper%E6%9E%B6%E6%9E%84.html`
+> `https://blog.reactor.top/2018/03/15/Zookeeper%E6%BA%90%E7%A0%81-%E6%80%BB%E4%BD%93%E6%B5%81%E7%A8%8B%E6%A6%82%E8%A7%88/`
 - 
 
