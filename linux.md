@@ -95,3 +95,6 @@ zip -r dest.zip dest/ -x dest/.git/\*
   - export http_proxy=http://127.0.0.1:8118
   - export https_proxy=http://127.0.0.1:8118
   - export ftp_proxy=http://127.0.0.1:8118
+
+### 查看磁盘带宽
+> `dd if=/dev/zero of=/mnt/test/rnd2 count=1000000`
