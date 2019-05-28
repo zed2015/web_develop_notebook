@@ -86,4 +86,12 @@ zip -r dest.zip dest/ -x dest/.git/\*
 - nmcli dev show |grep DNS
 
 ### 虚拟网络
+> `https://blog.csdn.net/phunxm/article/details/9498829`
 > `https://www.ibm.com/developerworks/cn/linux/1310_xiawc_networkdevice/`
+
+### shadowsock 代理
+> `https://laucyun.com/5cce9d01b0a0210482d65f5bc040d83b.html`, `https://www.polarxiong.com/archives/Ubuntu-16-04%E4%B8%8BShadowsocks%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96.html`
+- shell 配置
+  - export http_proxy=http://127.0.0.1:8118
+  - export https_proxy=http://127.0.0.1:8118
+  - export ftp_proxy=http://127.0.0.1:8118
