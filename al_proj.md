@@ -10,5 +10,8 @@ sudo modprobe nvidia_uvm nvidia_drm nvidia_modeset nvidia
 ```
 - export CUDA_CACHE_PATH=/tmp/nvidia
 - sudo apt install nvidia-modprobe
+### 安装cuda
+> https://blog.csdn.net/kaixinjiuxing666/article/details/80321124
+- `conda install cudatoolkit=10.0`
 
 

@@ -48,6 +48,9 @@ location = /favicon.ico {
 - requests changed by the rewrite directive.
 - requests redirected by the error_page, index, random_index, and try_files directives
 
+## proxy_pass
+> `https://blog.csdn.net/qq_29290295/article/details/80974997`
+
 
 
 

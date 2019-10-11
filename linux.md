@@ -45,7 +45,9 @@ groupmod -g gid groupname
 - `ls -l | grep "^d" |wc -l`
 
 ## zip 压缩命令
-zip -r dest.zip dest/ -x dest/.git/\*
+- zip -r dest.zip dest/ -x dest/.git/\*
+- zip -r faceEngineApi.zip faceEngineApi/ -x faceEngineApi/.git/\* \*.pyc faceEngineApi/test/\*
+
 
 ## sudo 命令会忽视environment
 - sudo -E
@@ -98,3 +100,31 @@ zip -r dest.zip dest/ -x dest/.git/\*
 
 ### 查看磁盘带宽
 > `dd if=/dev/zero of=/mnt/test/rnd2 count=1000000`
+
+### watch 命令
+> `watch -n 1 -d nvidia-smi`
+
+### 固定修改网卡名字
+> `https://askubuntu.com/questions/1158443/rename-interface-permanently`
+
+### 查看文件夹子大小
+> `du -h - max-depth=1`
+
+### 磁盘分区，文件系统挂载
+- 磁盘分区
+    - 查看详情 `fdisk -l` 
+    - 磁盘可以建立主分区，扩展分区，扩展分区可以建立逻辑分区
+    - 查看分区挂载详情 `df -h`
+- 分区格式化类别 `mkfs.ext2 ext3 ext4 partition`,234属于文件系统类型，不断优化的文件系统
+- 挂载
+    - mount partition dst-dir
+    - vim /etc/fstab
+
+    
+### 查看信号相关
+- man 7 signal
+- kill -l 查看所有信号
+- python 信号注册函数，不是在内核中;
+
+### scp 免输入密码
+>`sshpass -f "/path/to/passwordfile" scp -r user@example.com:/some/remote/path /some/local/path`
