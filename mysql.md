@@ -95,7 +95,8 @@ alter table table_name add constraint constraint_name foregin key (`user_id`) re
 ### mysql 5.7.25 time zone为system_time_zone时是cst引发jdbc误解为-5,导致时间差13个小时
 > `vim my.conf; default-ime-zone = '+08:00'`
 
-
+### 截取部分字段
+> `update tb_face_recognition_record_2 set faceImage=concat('http://10.18.103.100', substr(faceImage, length('http://10.18.100.41')+1));`
 
 
 
