@@ -128,3 +128,6 @@ groupmod -g gid groupname
 
 ### scp 免输入密码
 >`sshpass -f "/path/to/passwordfile" scp -r user@example.com:/some/remote/path /some/local/path`
+
+### nvidia-docker
+> `https://blog.csdn.net/junxiacaocao/article/details/79471770`

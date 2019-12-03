@@ -32,4 +32,5 @@ public static double cosineSimilarity(double[] vectorA, double[] vectorB) {
 }
 
 ```
-
+### 跳表
+> `https://cloud.tencent.com/developer/article/1353762`
