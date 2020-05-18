@@ -13,8 +13,19 @@ sudo modprobe nvidia_uvm nvidia_drm nvidia_modeset nvidia
 ### 安装cuda
 > https://blog.csdn.net/kaixinjiuxing666/article/details/80321124
 - `conda install cudatoolkit=10.0`
+### 安装 nvidia-dirver, ppa
+> `https://zhuanlan.zhihu.com/p/68069328`
 
 ### parallel inference in mxnet
 > `https://cwiki.apache.org/confluence/display/MXNET/Parallel+Inference+in+MXNet`
 
+### 安装nvidia-docker
+> `https://github.com/NVIDIA/nvidia-docker` docker >=19.03
+### anchor 理解
+> `https://zhuanlan.zhihu.com/p/63024247`
 
+### retinface fpn:
+> `https://blog.csdn.net/wzjwj/article/details/94456036`
+
+### 支持向量机
+> `https://tangshusen.me/2018/10/27/SVM/`
