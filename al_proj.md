@@ -14,4 +14,7 @@ sudo modprobe nvidia_uvm nvidia_drm nvidia_modeset nvidia
 > https://blog.csdn.net/kaixinjiuxing666/article/details/80321124
 - `conda install cudatoolkit=10.0`
 
+### parallel inference in mxnet
+> `https://cwiki.apache.org/confluence/display/MXNET/Parallel+Inference+in+MXNet`
+
 
