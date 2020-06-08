@@ -16,6 +16,9 @@ sudo modprobe nvidia_uvm nvidia_drm nvidia_modeset nvidia
 ### 安装 nvidia-dirver, ppa
 > `https://zhuanlan.zhihu.com/p/68069328`
 
+### parallel inference in mxnet
+> `https://cwiki.apache.org/confluence/display/MXNET/Parallel+Inference+in+MXNet`
+
 ### 安装nvidia-docker
 > `https://github.com/NVIDIA/nvidia-docker` docker >=19.03
 ### anchor 理解
