@@ -131,3 +131,12 @@ groupmod -g gid groupname
 
 ### nvidia-docker
 > `https://blog.csdn.net/junxiacaocao/article/details/79471770`
+
+### 禁止所有挂起
+- `sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target`
+- `sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target`
+
+### linux 注册表修改
+- `https://blog.csdn.net/o_o___o_o/article/details/52011394`
+- gsettings 命令
+- 挂起 `https://askubuntu.com/questions/473037/how-to-permanently-disable-sleep-suspend`
