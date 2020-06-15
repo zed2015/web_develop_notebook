@@ -30,3 +30,20 @@ class Evil(object):
     return (os.system, ('echo hello',))
 ```
 
+#### celery sentinel 配置
+- celeryconfig.py
+```
+# broker_url = 'sentinel://10.18.98.12:26377;sentinel://10.18.98.12:26376;sentinel://10.18.98.12:26375'
+# broker_transport_options = {'master_name': "redisMaster1"}
+# broker_options = {'master_name': "redisMaster1"}
+#
+# result_backend = 'sentinel://10.18.98.12:26377/0;sentinel://10.18.98.12:26376/0;sentinel://10.18.98.12:26375/0'
+# result_backend_transport_options = {'master_name': "redisMaster1"}
+```
+- flowerconfig.py
+```
+# broker_url = 'sentinel://{ip}:26377;sentinel://{ip}:26376;sentinel://{ip}:26375'.format(ip=ip)
+# BROKER_URL = broker_url
+# broker_transport_options = {'master_name': "redisMaster1"}
+# broker_options = {'master_name': "redisMaster1"}
+```

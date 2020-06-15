@@ -2,6 +2,9 @@
 ## 人脸模型训练的是rgb的
 ## affindTransform
 > 仿真变换 `https://zhuanlan.zhihu.com/p/23199679`
+### 变换
+> `http://www.jeepxie.net/article/81665.html`
+- `https://stackoverflow.com/questions/11687281/transformation-between-two-set-of-points`
 
 ### transform
 > `https://blog.csdn.net/hanshihao1336295654/article/details/83095641`

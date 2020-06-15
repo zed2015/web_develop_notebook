@@ -29,3 +29,7 @@ sudo modprobe nvidia_uvm nvidia_drm nvidia_modeset nvidia
 
 ### 支持向量机
 > `https://tangshusen.me/2018/10/27/SVM/`
+- https://towardsdatascience.com/support-vector-machine-python-example-d67d9b63f1c8
+
+### 函数图
+> `https://www.desmos.com/`

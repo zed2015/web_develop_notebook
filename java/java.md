@@ -81,6 +81,12 @@
 ###  
 http://fangjian0423.github.io/2017/06/10/springboot-environment-analysis/
 
+### java 垃圾回收机制
+> `https://blog.csdn.net/xsj_blog/article/details/102080187`
+
+### java jar so lib
+> `https://yiheng.github.io/2016/06/01/build-jni-project-with-maven/1
+
 #### maven 多模块
 - `https://blog.csdn.net/u014093594/article/details/85291859`好处
 - `https://blog.csdn.net/williamHappy/article/details/54376855`idea 操作案例
